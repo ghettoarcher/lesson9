@@ -6,28 +6,28 @@
 <body>
 <script>
 
-const  IsPalindrom = extendPalindrom  = number  => {
-	  number = BigInt(number);
+	const  IsPalindrom = extendPalindrom  = number  => {
+		  number = BigInt(number);
 
-if(CheckPalindrom(number)){
-	return true
-}
-number += BigInt(String(number).split('').reverse().join(''));  
- 
- try {
- 	return extendPalindrom(number);
- } catch(e) {
- 	return false;
- 	
- }
-}
+	if(CheckPalindrom(number)){
+		return true
+	}
+	number += BigInt(String(number).split('').reverse().join(''));  
 
-let InputNumber = prompt('Введите число');
-alert(IsPalindrom(InputNumber))
+	 try {
+		return extendPalindrom(number);
+	 } catch(e) {
+		return false;
 
-	function CheckPalindrom(number){
-		return String(number) === String(number).split('').reverse().join('');
-}
+	 }
+	}
+
+	let InputNumber = prompt('Введите число');
+	alert(IsPalindrom(InputNumber))
+
+		function CheckPalindrom(number){
+			return String(number) === String(number).split('').reverse().join('');
+	}
 
 </script>
 </body>
